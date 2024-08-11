@@ -42,7 +42,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -50,8 +50,8 @@ const Desc = styled.div`
 
 const ToggleButtonGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+  border: 1.5px solid ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   font-size: 16px;
   border-radius: 12px;
 font-weight 500;
@@ -65,7 +65,7 @@ const ToggleButton = styled.div`
   border-radius: 6px;
   cursor: pointer;
   &:hover {
-    background: ${({ theme }) => theme.primary + 20};
+    background: ${({ theme }) => theme.text_primary+ 20};
   }
   @media (max-width: 768px) {
     padding: 6px 8px;
@@ -79,7 +79,7 @@ const ToggleButton = styled.div`
 `;
 const Divider = styled.div`
   width: 1.5px;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.text_primary};
 `;
 
 const CardContainer = styled.div`
@@ -101,8 +101,7 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          Below are some of the projects I have created during my academic journey using various tech stacks.
         </Desc>
 
         <ToggleButtonGroup>
@@ -114,17 +113,17 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
+            active={toggle === "React app"}
+            onClick={() => setToggle("React app")}
           >
-            WEB APP"S
+            React App
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "android app"}
-            onClick={() => setToggle("android app")}
+            active={toggle === "javascript app"}
+            onClick={() => setToggle("javascript app")}
           >
-            ANDROID APP'S
+            Javascript App
           </ToggleButton>
           <Divider />
           <ToggleButton

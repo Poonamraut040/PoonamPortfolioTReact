@@ -3,15 +3,13 @@ import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../images/HeroImage.jpg";
-import HeroBgAnimation from "../HeroBgAnimation";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import {
   headContainerAnimation,
   headContentAnimation,
   headTextAnimation,
 } from "../../utils/motion";
-import StarCanvas from "../canvas/Stars";
+//import StarCanvas from "../canvas/Stars";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -111,7 +109,7 @@ const TextLoop = styled.div`
 
 const Span = styled.div`
   cursor: pointer;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.ternary};
 `;
 
 const SubTitle = styled.div`
@@ -219,10 +217,10 @@ const Hero = () => {
   return (
     <div id="About">
       <HeroContainer>
-        <HeroBg>
-          <StarCanvas />
-          <HeroBgAnimation />
-        </HeroBg>
+        {/* <HeroBg> */}
+          {/* <StarCanvas /> */}
+          {/* <HeroBgAnimation /> */}
+        {/* </HeroBg> */}
 
         <motion.div {...headContainerAnimation}>
           <HeroInnerContainer>
@@ -255,9 +253,9 @@ const Hero = () => {
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
-                <Tilt>
+                {/* <Tilt> */}
                   <Img src={HeroImg} alt="Rishav Chanda" />
-                </Tilt>
+                {/* </Tilt> */}
               </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>

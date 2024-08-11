@@ -107,11 +107,13 @@ const ProjectCard = ({ project }) => {
       </Details>
       <Members>
         {project.member?.map((member) => (
+          <a href={project.webapp} target="_blank" rel="noopener noreferrer">
           <Avatar src={member.img} />
+        </a>
         ))}
       </Members>
       <Button href={project.github} target="_blank">
-        View Code
+        Visit Website
       </Button>
     </Card>
   );

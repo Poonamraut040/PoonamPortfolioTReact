@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 
-export const Div = styled.div`
-    width:600px;
-    height: 500px;
-`
+// export const Div = styled.div`
+//     width:600px;
+//     height: 500px;
+// `

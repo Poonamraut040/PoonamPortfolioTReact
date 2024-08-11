@@ -39,7 +39,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -50,7 +50,7 @@ const ContactForm = styled.div`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(17, 25, 40, 0.83);
+  background-color:  #1d1836;
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 32px;
   border-radius: 12px;
@@ -62,7 +62,7 @@ const ContactTitle = styled.div`
   font-size: 28px;
   margin-bottom: 6px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.primary};
 `;
 const ContactInput = styled.input`
   flex: 1;
@@ -70,7 +70,7 @@ const ContactInput = styled.input`
   border: 1px solid ${({ theme }) => theme.text_secondary + 50};
   outline: none;
   font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_secondary};
   border-radius: 12px;
   padding: 12px 16px;
   &:focus {
@@ -134,7 +134,7 @@ const Contact = () => {
             marginBottom: "40px",
           }}
         >
-          Feel free to reach out to me for any questions or opportunities!
+          Feel free to reach out to me for any questions!
         </Desc>
         <ContactForm onSubmit={handelSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>

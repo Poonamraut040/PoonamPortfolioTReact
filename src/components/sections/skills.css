@@ -1,0 +1,131 @@
+.skills-section {
+  position: relative;
+  z-index: 50;
+  margin: 48px 0;
+}
+
+.blur-background {
+  width: 100px;
+  height: 100px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(40px);
+  opacity: 0.2;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-1px);
+}
+
+.divider .line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #8b5cf6, transparent);
+  width: 75%;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 32px 0;
+  padding: 20px 0;
+}
+
+.skills-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.skills-title {
+  font-size: 52px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.skills-marquee {
+  width: 100%;
+  margin: 48px 0;
+}
+
+.skill-item {
+  width: 144px;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  margin: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.skill-item:hover {
+  transform: scale(1.15);
+}
+
+.skill-box {
+  width: 100%;
+  height: 100%;
+  background-color: #202741;
+  border: 2px solid #1f223c;
+  border-radius: 0.375rem;
+  transition: all 0.5s ease;
+}
+
+.skill-item:hover .skill-box {
+  border-color: #8b5cf6;
+}
+
+.skill-box-divider {
+  height: 1px;
+  width: 75%;
+  background: linear-gradient(to right, transparent, #8b5cf6, transparent);
+  margin: auto;
+  transform: translateY(-1px);
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.skill-image-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-image {
+  height: 100%;
+  width: auto;
+  border-radius: 0.375rem;
+}
+
+.skill-name {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .skill-content {
+    gap: 24px;
+  }
+  .skill-image-container {
+    height: 64px;
+  }
+  .skill-name {
+    font-size: 1.125rem;
+  }
+}

@@ -56,7 +56,7 @@ const NavLink = styled.a`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.ternary};
   }
 `;
 
@@ -73,8 +73,8 @@ const ButtonContainer = styled.div`
 `;
 
 const GithubButton = styled.a`
-  border: 1px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+  border: 1px solid ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   justify-content: center;
   display: flex;
   align-items: center;
@@ -83,11 +83,11 @@ const GithubButton = styled.a`
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   &:hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.text_primary};
+    background: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -132,7 +132,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">GeeksForGeeks</NavLogo>
+        <NavLogo to="/">Poonam's Portfolio</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
@@ -167,7 +167,7 @@ const Navbar = () => {
               href={Bio.github}
               target="_Blank"
               style={{
-                background: theme.primary,
+                background: theme.text_primary,
                 color: theme.text_primary,
               }}
             >

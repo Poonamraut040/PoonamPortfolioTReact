@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-contnet: center;
-  position: rlative;
+  position: relative;
   z-index: 1;
   align-items: center;
 `;
@@ -43,7 +43,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -59,8 +59,7 @@ const Education = () => {
             marginBottom: "40px",
           }}
         >
-          My education has been a journey of self-discovery and growth. My
-          educational details are as follows.
+          My education has been a path of self-discovery and growth, continually shaped by every experience. Here are my academic details.
         </Desc>
 
         <VerticalTimeline>

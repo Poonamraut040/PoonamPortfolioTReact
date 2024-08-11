@@ -43,7 +43,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -59,8 +59,7 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+         I am always eager to learn new things. Below are some experiences that have enhanced both my technical and leadership skills.
         </Desc>
 
         <VerticalTimeline>
