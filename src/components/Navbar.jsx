@@ -69,7 +69,7 @@ const ButtonContainer = styled.div`
   padding: 0 6px;
   @media screen and (max-width: 768px) {
     display: none;
-    color: ${({ theme }) => theme.text_secondary};
+    
     
   }
 `;
