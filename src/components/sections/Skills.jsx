@@ -5,7 +5,7 @@ import './skills.css'; // Import the CSS file
 
 function Skills() {
   return (
-    <div id="skills" className="skills-section">
+    <div id="Skills" className="skills-section">
       <div className="blur-background"></div>
 
       <div className="divider">
