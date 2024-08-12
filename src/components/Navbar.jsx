@@ -97,7 +97,7 @@ const MobileIcon = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme. text_secondary};
   display: none;
   @media screen and (max-width: 768px) {
     display: block;
