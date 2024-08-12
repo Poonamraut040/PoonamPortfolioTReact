@@ -69,6 +69,8 @@ const ButtonContainer = styled.div`
   padding: 0 6px;
   @media screen and (max-width: 768px) {
     display: none;
+    color: ${({ theme }) => theme.text_secondary};
+    
   }
 `;
 
@@ -95,7 +97,7 @@ const MobileIcon = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_secondary};
   display: none;
   @media screen and (max-width: 768px) {
     display: block;
